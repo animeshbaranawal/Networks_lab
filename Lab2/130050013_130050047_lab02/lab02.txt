@@ -1,0 +1,106 @@
+Excercise 1
+
+1) 
+	a) Size of TCP packets is 1040 bytes
+	   Size of Ack packets is 40 bytes
+
+	b) Application feeding TCP is FTP
+
+	c) Queue size limit of imtermediate node is 10
+
+	d) Link 1
+		Data rate - 10 Mbps
+		Propagation delay - 10ms
+	
+	   Link 2
+ 		Data rate - 1 Mbps
+		Propagation delay - 5ms
+
+	e) TCP packets dropped - 60
+	   Ack packets dropped - 0
+
+	
+2)   a) 2 flows - One of type TCP and one of type UDP
+
+     b) Application feeding TCP flow is FTP
+	Application feeding UDP flow is CBR
+
+     c) Source data rate for CBR = 0.4 Mbps
+	Source data rate of TCP cannot be found
+
+     d) TCP ends at 4.0 secs
+	UDP ends at 5.0 secs
+
+     e) UDP flow - Throughput is 0.4 Mbps
+	TCP flow - Throughput is 1.06 Mbps
+
+
+3)  
+	For 40 Kbps
+
+	    a)  Time interval between two packets of 50 bytes is 0.01 secs
+		  
+		Hence, offered load = (50 * 8 )/ 0.01 bits per sec
+				    = 40 Kbps
+
+	    b) Number of Packets lost = 6
+	       Therefore , percentage of packet lost = 0.6%
+		
+	     (	P.S. - these packets were not lost due to dropping
+		 but because we are running the simulation for only
+		10 secs and some of the packets that were sent just 			
+		before the end could not reach the destination due to
+		latency (tansmission + propagation delay) 
+	     )
+
+	    c) Throughput  - 40 Kbps
+
+	    d) End to End Delay - 59.4 ms
+-----------------------------------------------------------------------------
+
+	    For 80 Kbps
+	     
+	     a) Time between two packets of size 100 bytes is 0.01 secs
+		
+		Hence ,  Offered load = (8* 100) / 0.01 bits per sec
+				      = 80Kbps
+
+	     b) Packets lost = 7
+		Percentage of packets lost =  (7/1996) * 100
+					   = 0.35 %
+	    
+	     c) Throughput - 80 Kbps
+
+	     d) End to End Delay - 63.8 ms
+
+-----------------------------------------------------------------------
+
+	For 120 Kbps
+	     a) Time between two packets of size 150 bytes is 0.01 secs
+		
+		Hence ,  Offered load = (8* 150) / 0.01 bits per sec
+				      = 120Kbps
+ 
+	     b) Packets lost = 173 
+		Percentage of Packets lost = (173/1996) * 100
+					   = 8.67 %
+	    
+             c)  Throughput - 100.5 kbps
+
+	     d) End to End Delay - 110 ms
+
+------------------------------------------------------------------------------
+
+	For 160 Kbps
+	     a) Time between two packets of size 200 bytes is 0.01 secs
+		
+		Hence ,  Offered load = (8* 200) / 0.01 bits per sec
+				      = 160Kbps
+ 
+	     b) Packets lost = 380
+		Percentage of Packets lost = 19.04%
+
+	     c) Throughput - 100.16 Kbps
+
+	     d) End to End delay - 200 ms
+
