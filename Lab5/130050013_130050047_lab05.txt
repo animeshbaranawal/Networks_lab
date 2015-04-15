@@ -1,0 +1,167 @@
+Name - Animesh Baranawal 130050013
+	Lokit Kumar Paras 130050047
+
+
+							LAB05
+						       -------
+Excercise 2:
+
+		1) MAC Address - 70:54:d2:45:c0:23
+			IPv4 address: 10.105.11.94
+			IPv6 address: fe80::7254:d2ff:fe45:c023/64
+
+		2) MTU size is 1500.
+			MTU ( Maximum Transmission Unit)
+			MTU means the maximum packet size that can be sent on  the network.
+
+		3)  Ethernet speed is 100Mbps for Full Duplex Mode
+			Wire type is Twisted Pair.
+
+		4) Transmitted Packets: 2160254
+			Recieved Packets:110803989
+			Dropped Packets: 0
+
+		5) No there was no difference in the statistics from ifconfig and netstat.
+
+			P.s. one needs to run using ifconfig && netstat -i.
+
+			if we run the commands separately theen there is difference in the values due to time difference between excuting the 
+			two commands 
+
+		
+		6) No of packets that suffered collision =0
+
+			Justification : This is due to lack of Network Congestion ( i.e low load on the network)
+
+		7) Recieved bytes : 10180981014 (10.1 GB) 
+		   Transmitted Bytes : 1217248151 (1.2 GB)
+
+		8) Manufacturer of Ethernet card is :  PEGATRON CORPORATION
+
+		9) 'lo' is the localhost interface used for communicating between applications on the same host. It helps in communication between 
+		   Network Protocols.
+
+			No it does not have a MAC address.
+
+			Experiment =>
+			-----------
+			Commands used ( in separate terminals):
+
+				- ping 127.0.0.1  ( for generating traffic )
+
+				- tcpdump -i lo ( for capturing traffic on interface "lo" )
+
+
+			Observation - 
+				We observed that when we are sending messages on 127.0.0.1 they are coming back to our own host. This can be seen 
+				from tcpdump, where  we see that the packets are being sent to our own host itself from localhost > localhost (i.e ]
+				127.0.0.1 > 127.0.0.1)
+
+			Conclusions-
+
+				From the above observation we can conclude that 'lo' interface is meant for sending messages to applications on the 
+				same host as when we sent messages on 127.0.0.1 they came back to our own host which was visible from the tcpdump.
+
+		10) MAC address of default gateway router - 00:19:56:ed:66:c1
+			Commands used:
+				route
+				arp "IP address of the default gateway"
+
+
+Excercise 4:
+
+		1)  Anamoly noticed :
+			-> We saw that even though uml3 is connected to both interfaces eth1 and eth2 but still it was able to communicate with 
+			   only uml1 ,and uml2 which are on eth1 but was not able to communicate with uml4 on eth2.
+
+			-> Similar anamoly was seen with uml5
+
+
+			Possible reason for this anamoly : 
+
+			A host is able to use only one its available ports to communicate. As a result the ulm3 is
+			not making use of the second port and only using the first port so it is able to communicate with Net0 but not Net1 and 
+			similarly ulm4 is also not able to communicate with ulm3 
+
+
+		2) After enabling bridging between Net 0 and Net1, uml1 can  now reach uml2, uml4 and uml5
+
+			Now uml1 can communicate with uml4 and uml5 also as now the uml3 starts acting like a bridge between the two ethernet 
+			interfaces eth1 and eth2 which was missing earlier without a bridge.
+
+		3) After enabling bridging between Net1 and Net2 , uml1 can now reach uml2, uml4, and uml6
+
+		4)  Clearing the learning table : brctl setageing mybridge1 0
+			
+			Allowing the MAC addresses  : brctl setageing mybridge1 100
+			to remain in the learning 
+			table for 100 secs
+			
+			Pinging uml6 from uml1     : Ping 10.0.0.8
+
+			Listing the learning table : brctl showmacs mybridge1
+
+			LEARNING TABLE =>
+			-----------------
+
+			port 	mac addr 			islocal?		ageing timer
+			1 		02:fd:00:00:00:01	no 				13.80
+			1 		02:fd:00:00:02:01	yes				0.00
+			2 		02:fd:00:00:02:02	yes				0.00
+			2       02:fd:00:00:05:01	no  			13.80
+
+			Yes the results comply with theory, as the local mac addresses represent the MAC address of the ports 1 and 2 which are 
+			used to connect Net0 with Net1. These two MAC addresses always remain listed by default.
+
+			When uml1 send packets to uml6 it first reaches the mybridge1 and its MAC address gets listed in the learning table and the 
+			port used for recieving this packet from uml1 is set to 1 as uml1 lies on Net0.
+
+			and when uml6 replies back to uml1 its MAC address also gets listed in the learning table and the port used to reach uml6 
+			is set to 2, as that is the path followed by the message coming from uml6.
+
+
+
+		5) After turning on the spanning tree at all bridges 
+
+			Root Bridge:  mybridge1 (uml3)
+
+			Root Bridge's ID : 0000.02fd00000201
+
+			Designated Bridge =>
+			-----------------
+				Net0 -  mybridge1
+				Net1 -  mybridge1
+				Net2 -  mybridge2
+
+		6) to be executed in uml3 terminal:
+				brctl addbr mybridge1
+				brctl addif mybridge1 eth1 
+				brctl addif mybridge1 eth2
+				ifconfig mybridge1 up
+
+			to be executed in uml5 terminal:
+				brctl addbr mybridge2
+				brctl addif mybridge2 eth1 
+				brctl addif mybridge2 eth2
+				ifconfig mybridge2 up
+
+			to turn on STP in uml3 terminal:
+				brctl stp mybridge1 on
+
+			to turn on STP in uml5 terminal:
+				brctl stp mybridge2 on
+
+
+Extra credit:
+
+		1)   Default ageing timer used by the bridges : 300 secs
+			
+			 Commands used :  brctl showstp mybridge1 | grep ageing 
+
+		2)   The Root bridge of the spanning tree will change to mybridge2 now
+
+			 Also, the learning table of mybridge2 will no longer have the MAC addresses of hosts connected to Net0 Lan segment after 
+			 ageingtime,
+			 
+			 and the Designated bridge for Lan segment Net1 will change to mybridge2. 
+
