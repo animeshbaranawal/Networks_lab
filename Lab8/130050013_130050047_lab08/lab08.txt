@@ -1,0 +1,186 @@
+						LAB 08
+
+Exercise 1
+
+1)   ping 10.105.11.65 from the source machine with IP address 10.105.11.95
+
+	and 
+
+	Run Tcpdump on the destination machine (10.105.11.95) with command
+
+		tcpdump -i eth0  src 10.105.11.95 or dst 10.105.11.95 -w ex1_1
+
+
+	Number of ARP messages exchanged = 2
+
+	yes, the ARP entry in the ARP cache corresponds to the remote host IP address we contacted.
+
+
+	Observations:  Initially when we do not have an entry of the IP address we are trying to contact, the Src host broadcasts an ARP request 
+	message which reaches all the nodes in our subnet. Only the target host then replies to the ARP request with an ARP reply. This way the src 
+	host gets the MAC address of the destination IP address and then they can communicate easily once this entry is added in the ARP cache.
+
+2) ping 10.129.1.153
+	
+	and
+
+	tcpdump -i eth0 src 10.105.11.95 or 10.105.11.95  -w ex1_2 
+
+	No ARP messages are exchanged.
+
+	Observations :  When we try to communicate a host not present in our own subnet, the message is simply forwarded to the gateway set for that
+	 IP address ( or simply default gateway). The entry corresponding to the default gateway is already present in the ARP cache, hence no ARP 
+	 messages are exchanged.
+
+
+3) ping -c 1 10.105.11.248
+
+	The src host braodcasts 3 ARP packets as a request after which it gives up. Time taken 2 secs
+
+	Observation:  We observe that when the host IP address consists of a non-existing host , the host tries by sending ARP requests only 
+	thrice. After that the host realises that the IP address is non-existent and no longer generates ARP requests. 
+
+
+##################################################################################################################################################
+
+Excercise 2
+
+
+1) For generating  Gratuitous ARP requests 
+
+		arping -U -s 10.105.11.95 -I eth0 10.105.11.95
+
+	For generating the Gratuitous ARP replies
+		
+		arping -A -s 10.105.11.95 -I eth0 10.105.11.95	
+
+	 and for capturing the trace 
+
+		tcpdump -i eth0 src 10.105.11.95 or dst 10.105.11.95 -w ex2
+
+
+2) For  gratuitous ARP request the Target MAC address is broadcast address (ff:ff:ff:ff:ff:ff), hence it reaches all the hosts within the same 
+	physical network due to flooding.
+
+	
+3) The Target MAC address in Request Gratuitous ARP is set to Broadcast ( ff:ff:ff:ff:ff:ff)
+	and Sender MAC address is its own MAC address
+
+ 	Whereas, for Reply Gratuitous ARP the both Sender and Target MAC address is Host's own MAC address.
+
+##################################################################################################################################################
+
+
+Exercise 3
+
+
+1) Total length  = 58
+	Identifier = 0x58e7 (22759)
+	Flags =  0 1 0
+	Fragment offset = 0
+
+
+2) Fragment 1 
+
+	Total length = 1500
+	Identifier = 0x735d (29533)
+	Flags = 0 0 1
+	Fragmentation offset = 0
+
+  Fragment 2
+
+	Total length = 1500
+	Identifier = 0x735d (29533)
+	Flags = 0 0 1
+	Fragmentation offset = 1480 (in bytes)
+
+
+  Fragment 3
+
+  	Total length = 68
+	Identifier = 0x735d (29533)
+	Flags = 0 0 0
+	Fragmentation offset = 2960
+
+
+
+
+##################################################################################################################################################
+
+Exercise 4
+
+ 	1) Ip address of DHCP server  = 10.129.1.53
+ 	   Port number = 67
+
+ 	 2) No there is no DHCP relay involved in forwarding DHCP packets as the Relay agent IP address inside Bootstrap Protocol is 0.0.0.0
+
+ 	 3) DHCP server replied to 10.129.26.130
+
+ 	   This is because the client is trying to renew its IP address, hence in the DHCP offer itself the client requests for IP ( 10.129.26.130 ). So 
+ 	   the DHCP server knows the IP address it needs to reply to.
+
+ 	 4) The same IP address (10.129.26.130) is again offered to the client , valid for 10 Mins.
+
+ 	 5) It recieved the following information - 
+
+ 	 	Subnet Mask  = 255.255.128.0
+
+ 	 	Domain Name =  it.iitb.ac.in cse.iitb.ac.in
+
+ 	 	DNS server = 10.129.1.1
+
+
+ #################################################################################################################################################
+
+ Exercise 5
+
+  	For generating Type 0 Code 0 and Type 8 code 0
+
+  	 We use Ping 10.105.11.94 
+
+  	  The Ping reply ICMP packets are of Type 0 Code 0 
+  	  and 
+  	  The Ping request ICMP packets are of Type 8 code 0
+
+
+  	For Type 3 code 3
+
+  	  We do traceroute internet.iitb.ac.in
+
+  	  The last ICMP packet recieved is of Type 3 Code 3
+
+
+################################################################################################################################################
+
+Exercise 6
+
+
+1)	
+	traceroute internet.iitb.ac.in
+
+	traceroute to internet.iitb.ac.in (10.201.250.201), 30 hops max, 60 byte packets
+	 1  router.cse.iitb.ac.in (10.105.250.1)  0.687 ms  1.062 ms  1.319 ms
+	 2  10.250.105.1 (10.250.105.1)  1.024 ms  1.025 ms  1.016 ms
+	 3  172.16.5.1 (172.16.5.1)  0.543 ms  0.553 ms  0.552 ms
+	 4  internet.iitb.ac.in (10.201.250.201)  0.533 ms  0.527 ms  0.522 ms
+
+
+2) The ICMP messages involoved with intermediate routers are of Type 11 code 0 for TTL exceeded 
+
+   only for the destination host the ICMP message is of Type 3 Code 3 for Port Unreachable.
+
+3) This command starts generating three probes each with TTL = 1 and sends it to the Destination IP address.
+   After reaching the next hop its TTL expires and hence ICMP packet of Type 11 Code 0 is generated as the TTL is exceeded.
+
+   On recieving this message then the Source host keeps on increasing the TTL by one for each intermediate router until the probes
+   finally reach the Destination router and this time the ICMP message generated is of Type 3 Code 3 for Port Unreachable. This informs the 
+   Source that the destination host has been reached.
+
+
+ 4) IP address of the default router is 10.105.250.1 according to traceroute but the IP address from route is 10.105.1.250.
+
+
+
+
+
+ 

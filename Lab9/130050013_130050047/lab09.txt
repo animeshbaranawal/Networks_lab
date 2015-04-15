@@ -1,0 +1,108 @@
+																	LAB 09
+
+Name - Animesh Baranawal 130050013
+	   Lokit Kumar Paras 130050047
+
+Exercise 1
+#############################################################################################################################################
+
+Part -1 
+
+	PING replies recieved by uml1 = 5
+	PING replies recieved by uml2 = 15
+
+	Observations -  When we ping uml3 from uml1 while uml2 has still not started pinging then uml1 recieves ping replies normally. However when 
+					we start pinging uml3 from uml2, it sends a ARP broadcast request which changes the entries in the ARP 
+					cache of uml3. After that uml2 not only recieves the replies for its own ping requests from uml3, but also 
+					starts recieving ping replies for uml1 coming from uml3.
+
+					While for uml3 eveything seems normal, only its ARP cache changes when the broadcast from uml2 arrives. 
+					Otherwise apart from this it just keeps on recieving ping requests from 10.0.0.100 and replies to all of 
+					them.
+
+
+Part -2 
+
+	PING replies recieved by uml1 = 5
+	PING replies recieved by uml2 = 15
+
+	Observations -  When we ping uml3 from uml1 while uml2 has still not started pinging then uml1 recieves ping replies normally. However when 
+			we start pinging uml4 from uml2, it sends a ARP broadcast request which changes the entries in the ARP cache of everyone (i.
+			e. 10.0.0.100 gets mapped with the MAC address of uml2) . After that uml2 not only recieves the replies for its own ping 
+			requests from uml4, but also starts recieving ping replies for uml1 from uml3.
+
+			While for uml3,uml4 eveything seems normal, only its ARP cache changes when the broadcast from uml2 arrives. Otherwise 	
+			apart from this they just keeps on recieving ping requests from ip address 10.0.0.100 and reply accordingly, it is the ARP 
+			cache of uml3 that leads to sending of all the replies meant for uml1 to uml2 instead. 
+
+Part - 3
+
+	We conducted the whole experiment twice, and came accross these two observations.
+
+	Experiment version 1 
+
+		 Here we found that uml2 recieved the PING requests from uml3 as well as PING requests from uml4. 
+
+	Experiment version 2
+
+		Here we found that uml1 recieved the PING requests from uml3, but when uml2 recieved PING requests from uml4 instead of uml1.
+
+	Observations - 
+		 We observed that the outcomes of the experiment depended on whose ARP reply reached the sender first. (i.e - say uml3 generated 
+		 ARP request, then if uml1's ARP reply reaches uml3 before uml2's ARP reply, then uml3 starts replying to uml1 and ignores the ARP 
+		reply from uml2 and vice versa.)
+
+		 So in case of Experiment version1 both the times the ARP reply from uml2 reached uml3 and uml4 before ARP reply from uml1. Hence 
+		 both uml3 and uml4 replied to uml2 only.
+
+		 However in case of Experiment version 2 uml1's ARP reply reached uml3 first, but uml2's ARP reply reached uml4 before uml1 when 
+		 uml4 started pinging. 
+
+
+	So, a malicious host needs to make sure that its ARP reply reaches the source before any other host, And to do this it must reply to ARP 
+	request as fast as possible.
+
+
+Exercise -2 
+#################################################################################################################################################
+
+Part -1 
+
+ Observation -  We are able to ping uml2 from uml1, but when we try to ping uml2 from uml4 we get "Network is unreachable".
+
+ Conclusion - The binary representation for the last 8 bits of IP addresses is as follows:
+
+   100 = 01100100
+   101 = 01100101
+   102 = 01100110
+   120 = 01111000
+
+   now when we try to ping 10.0.0.101 from uml1,  uml1 applies its subnet mask on the IP address 10.0.0.101 to check if it lies in its own 
+   network or not. The mask of uml1 is 255.255.255.240 . So when it applies this mask on IP 10.0.0.101 it finds that it has the same network 
+   portion ( last 4 bits are 0110 for both uml1 and uml2 ) hence it is in the same network and pinging is successful.
+
+   But when we try to ping 10.0.0.101 from uml4 it also applies its subnet mask 255.255.255.240 on the IP, but finds that last 4 bits of network 
+   potion are 0110, but the last 4 bits of network portion of uml4 are 0111. Hence they both are seemingly not on the same network. Hence the 
+   pinging shows, "Network is Unreachable". 
+
+
+ Part - 2
+
+  observation - We are able to ping uml1 from uml2, but get no reply from uml4 when we try to ping it from uml2.
+
+  Conclusion - 
+
+    The reason for this observation is similar. When we try to ping 10.0.0.100 from uml2, it applies its mask (i.e. 255.255.255.0 ) which gives 
+    the network portion of 10.0.0.100 same as uml2. And even uml1 is able to communicate with uml2 as we saw in PART 1. Hence Pinging request 
+    and replies are successful.
+
+
+    However when we try to ping 10.0.0.120 from uml2 ,even though uml2 is successfully able to send the PING request to uml4 as the network 
+    portion is same. But uml4 is not able to reply back due to reason stated in PART 1. Hence PING is not successfull.
+
+
+    DIFFERENCES - In part 1 uml1 was able to reach uml2 but uml4 was not able to reach uml2, However in Part 2 uml2 was able to reach both uml1 
+    and uml4. Hence PING was successful  with uml1 but since uml4 couldnot reply back, PING was not successful with uml4.
+
+    So basically the reason for failing of PING between uml2 and uml4 were different in Part1 and Part2. In part1 , uml4 was not even able to 
+    send the request because it thought that uml2 is in different network, but in Part2 PING failed due to uml4 not being able to reply back.

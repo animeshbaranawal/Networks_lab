@@ -1,0 +1,656 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>bridge | The Linux Foundation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--[if IE 6]>
+<script type="text/javascript" src="/misc/jquery.js"></script>
+<script type="text/javascript" src="/sites/all/themes/opensourcery/suckerfish.js"></script>
+<![endif]-->
+<script type='text/javascript' src='//s7.addthis.com/js/250/addthis_widget.js#async=1'></script>
+<link rel="shortcut icon" href="/sites/all/themes/opensourcery/favicon.ico" type="image/x-icon" />
+<meta name="description" content="The Linux Foundation is a non-profit consortium dedicated to fostering the growth of Linux, and promoting standardization and technical collaboration of Open Source Linux" />
+<meta name="keywords" content="Linux,Linux Foundation,Open Source,GNU,GPL,GNU/Linux,GNU Linux,Linux.com Email,Linux.com,Linux Foundation Membership,Support Linux,Linux Trademark,Linux Training,Linux Credit Card,Linux Membership,Learn Linux" />
+<link rel="canonical" href="http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge" />
+<meta name="revisit-after" content="1 day" />
+  <link type="text/css" rel="stylesheet" media="all" href="http://www.linuxfoundation.org/sites/main/files/css/css_df03762848bf235cbfe29694da755fd4.css" />
+<link type="text/css" rel="stylesheet" media="print" href="http://www.linuxfoundation.org/sites/main/files/css/css_b5f927cd3de0a89431eb57424d6240f7.css" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/zen/zen/ie.css?3" />
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/opensourcery/css/ie.css?3" />
+<![endif]-->
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/opensourcery/css/ie7.css?3" />
+<![endif]-->
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/opensourcery/css/ie6.css?3" />
+<![endif]-->
+  <script type="text/javascript" src="http://www.linuxfoundation.org/sites/main/files/js/js_ab09428b82b0980f5530a75e5387398b.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)sites\/main\/files","default_image":"\/sites\/all\/modules\/contrib\/lightbox2\/images\/brokenimage.jpg","border_size":20,"font_color":"a1a1a4","box_color":"fff","top_position":"","overlay_opacity":"0","overlay_color":"fff","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":1,"flvPlayer":"\/","flvFlashvars":"rel=0\u0026amp;autoplay=1\u0026amp;iframe=true"},"addthis":{"config_default":{"services_toolbox":"google_plusone, facebook_like_counter, tweet","services_compact":"favorites, email, delicious, google, google_plusone, facebook, live, myspace, reddit, slashdot, stumbleupon, technorati, twitter, myweb","services_expanded":"","ui_cobrand":"Linux Foundation","ui_header_color":"#666699","ui_header_background":"#fff","ui_click":0,"ui_delay":"","ui_use_addressbook":0,"pubid":"ra-4ee163686927743a","data_track_clickback":false,"data_ga_tracker":0,"ui_use_css":true,"data_use_cookies":true,"ui_language":"en","data_use_flash":true},"share_default":{"templates":{"twitter":"{{title}} {{url}} via @linuxfoundation"}}},"og":{"group_context":{"nid":"5066","title":"Networking","type":"group"}},"superfish":{"1":{"id":1,"sf":{"animation":{"opacity":"show","height":"show"},"speed":"fast","autoArrows":true,"dropShadows":false,"disableHI":false},"plugins":{"touchscreen":{"mode":"useragent_predefined"},"smallscreen":{"mode":"window_width","breakpoint":420,"title":"Primary links"},"supposition":true,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}}});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+addthis_config = Drupal.settings.addthis.config_default; addthis_share = Drupal.settings.addthis.share_default;
+//--><!]]>
+</script>
+  <script type="text/javascript"> </script>
+  <meta name="viewport" content="width=1100" />
+</head>
+<body class="not-front not-logged-in node-type-wiki one-sidebar sidebar-right og-context og-context-5066 lf-assets page-collaborate-workgroups-networking-bridge section-collaborate linux-foundation">
+
+  <div id="header"><div id="header-inner" class="clear-block">
+          
+    <div class="diagonal">
+      <div class="header-inner"><a href="http://www.linuxfoundation.org" id="organization">Linux Foundation</a><a href="/cas?destination=node%2F5253" class="login">Log in</a><ul id="links" class="dropdwn">
+    <li class="drop">
+      <a class="sites" href="#">LF Sites</a>
+      <ul class="sub-menu">
+  <li><a href="http://www.linux.com">Linux.com</a></li><li><a href="http://video.linux.com">Linux.com Video</a></li></ul></li><li><a href="http://www.linuxfoundation.jp">日本語</a></li>
+      <li class="drop">
+        <a href="#" class="share" data-toggle="dropdown">Share</a>
+        <ul class="sub-menu social"><li class="twitter"><a href="https://twitter.com/linuxfoundation">Follow us on Twitter</a></li><li class="facebook"><a href="https://www.facebook.com/pages/The-Linux-Foundation/41911143546">Add us on Facebook</a></li><li class="linkedin"><a href="http://www.linkedin.com/groups?gid=48682">Add us on LinkedIn</a></li><li class="identica"><a href="https://identi.ca/linuxfoundation">Follow us on Identica.ca</a></li></ul>
+      </li></ul>
+      </div>
+    </div><div class="tabbable">
+    <ul class="nav nav-tabs"><li class="active"><a href="http://www.linuxfoundation.org">Home</a></li><li><a href="http://training.linuxfoundation.org">Training</a></li><li><a href="http://events.linuxfoundation.org">Events</a></li><li><a href="http://collabprojects.linuxfoundation.org">Collaborative Projects</a></li><li class="search-leaf"><form action="http://go.linuxfoundation.org/s/6342/108f5b77ca48c11da3e2a44ce53b144d"  accept-charset="UTF-8" method="post" id="search-block-form-1">
+<div><div class="container-inline">
+  <div class="form-item" id="edit-search-block-form-3-wrapper">
+ <label for="edit-search-block-form-3">Search this site: </label>
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-3" size="15" value="" onblur="if (this.value == &#039;&#039;) {this.value = &#039;&#039;;}" onfocus="if (this.value == &#039;&#039;) {this.value = &#039;&#039;;}" class="form-text" />
+</div>
+<input type="submit" name="op" id="edit-submit-1" value="Search"  class="form-submit" />
+<input type="hidden" name="form_build_id" id="form-9uhmVvDYHPTHCthiAXL6cxf2xBpy4NC4hEA0JdzPZ0Q" value="form-9uhmVvDYHPTHCthiAXL6cxf2xBpy4NC4hEA0JdzPZ0Q"  />
+<input type="hidden" name="form_id" id="edit-search-block-form-2" value="search_block_form"  />
+</div>
+
+</div></form>
+</li></ul></div><div class="nav-content"><ul id="superfish-1" class="sf-menu sf-primary-links sf-horizontal sf-style-none sf-total-items-6 sf-parent-items-6 sf-single-items-0"><li id="menu-4575-1" class="first odd sf-item-1 sf-depth-1 sf-total-children-9 sf-parent-children-0 sf-single-children-9 menuparent"><a href="/about" title="About Us" class="sf-depth-1 menuparent">About Us</a><ul><li id="menu-18301-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/about/members" title="" class="sf-depth-2">Members</a></li><li id="menu-1940-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/about/board-members" title="Board Members" class="sf-depth-2">Board Members</a></li><li id="menu-22289-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/about/leadership" title="Leadership" class="sf-depth-2">Leadership</a></li><li id="menu-1941-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/about/faq" title="FAQ" class="sf-depth-2">FAQ</a></li><li id="menu-1942-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/about/bylaws" title="Bylaws" class="sf-depth-2">Bylaws</a></li><li id="menu-1943-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/about/careers" title="Careers" class="sf-depth-2">Careers</a></li><li id="menu-5441-1" class="middle odd sf-item-7 sf-depth-2 sf-no-children"><a href="/about/stay-connected" title="Connect" class="sf-depth-2">Stay Connected to the Linux Foundation</a></li><li id="menu-1944-1" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="/about/contact" title="Contact Us" class="sf-depth-2">Contact Us</a></li><li id="menu-6227-1" class="last odd sf-item-9 sf-depth-2 sf-no-children"><a href="/about/linux-foundation-trademark-usage-guidelines" title="Linux Foundation Trademark Usage Guidelines" class="sf-depth-2">Linux Foundation Trademark Policy</a></li></ul></li><li id="menu-473-1" class="middle even sf-item-2 sf-depth-1 sf-total-children-3 sf-parent-children-1 sf-single-children-2 menuparent"><a href="/about/join" title="Join" class="sf-depth-1 menuparent">Join</a><ul><li id="menu-1938-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/about/join/corporate" title="Corporate Membership" class="sf-depth-2">Corporate Membership</a></li><li id="menu-5583-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/about/join/individual" title="Individual Membership" class="sf-depth-2 menuparent">Individual Membership</a><ul><li id="menu-1999-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/about/join/individual/agreement" title="Agreement" class="sf-depth-3">Agreement</a></li><li id="menu-8839-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/about/join/individual/faq" title="Individual Membership FAQ" class="sf-depth-3">FAQ</a></li><li id="menu-5577-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/about/join/individual/individual-membership-and-lifetime-email" title="Individual Membership + Lifetime Email" class="sf-depth-3">Individual + Lifetime Email</a></li><li id="menu-2000-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/about/join/individual/join" title="Individual Membership" class="sf-depth-3">Individual</a></li><li id="menu-5578-1" class="last odd sf-item-5 sf-depth-3 sf-no-children"><a href="/about/join/individual/student-membership-application" title="Student Verification Application" class="sf-depth-3">Student</a></li></ul></li><li id="menu-5636-1" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="/participate/linux-donate" title="Donate and Support Linux and the Linux Foundation!" class="sf-depth-2">Donate</a></li></ul></li><li id="menu-475-1" class="middle odd sf-item-3 sf-depth-1 sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent"><a href="/news-media" title="News &amp; Media" class="sf-depth-1 menuparent">News &amp; Media</a><ul><li id="menu-3654-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/news-media/announcements" class="sf-depth-2">Announcements</a></li><li id="menu-3658-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/news-media/news" class="sf-depth-2">News</a></li><li id="menu-3660-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/news-media/blogs" class="sf-depth-2">Blogs</a></li><li id="menu-21319-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/news-media/videos" title="Videos" class="sf-depth-2">Videos</a></li><li id="menu-18733-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/news-media/infographics" title="" class="sf-depth-2">Infographics</a></li><li id="menu-1947-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/news-media/feeds" title="Feeds" class="sf-depth-2">Our Feeds</a></li><li id="menu-3676-1" class="last odd sf-item-7 sf-depth-2 sf-no-children"><a href="/news-media/lwf" title="Linux Weather Forecast" class="sf-depth-2">Linux Weather Forecast</a></li></ul></li><li id="menu-477-1" class="middle even sf-item-4 sf-depth-1 sf-total-children-6 sf-parent-children-5 sf-single-children-1 menuparent"><a href="/programs" title="Programs" class="sf-depth-1 menuparent">Programs</a><ul><li id="menu-1952-1" class="first odd sf-item-1 sf-depth-2 sf-total-children-5 sf-parent-children-0 sf-single-children-5 menuparent"><a href="/programs/end-user" title="End User Programs" class="sf-depth-2 menuparent">End User Programs</a><ul><li id="menu-5455-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/about/join/individual/join" title="" class="sf-depth-3">Individual Membership</a></li><li id="menu-5453-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/programs/linux-credit-card" title="Linux Credit Card" class="sf-depth-3">Linux Credit Card</a></li><li id="menu-5457-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="/programs/end-user/linux.com" title="Linux.com" class="sf-depth-3">Linux.com</a></li><li id="menu-3670-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="http://www.openprinting.org" title="" class="sf-depth-3">OpenPrinting</a></li><li id="menu-3669-1" class="last odd sf-item-5 sf-depth-3 sf-no-children"><a href="http://www.fossbazaar.org/" title="" class="sf-depth-3">FOSSBazaar</a></li></ul></li><li id="menu-1953-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-5 sf-parent-children-1 sf-single-children-4 menuparent"><a href="/programs/developer" title="Developer Programs" class="sf-depth-2 menuparent">Developer Programs</a><ul><li id="menu-1962-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/programs/developer/nda" title="NDA Program" class="sf-depth-3">NDA Program</a></li><li id="menu-1965-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/programs/developer/fellowship" title="Linux Fellow Program" class="sf-depth-3">Linux Fellow Program</a></li><li id="menu-1966-1" class="middle odd sf-item-3 sf-depth-3 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/programs/developer/travel" title="Community Developer Travel Fund" class="sf-depth-3 menuparent">Travel Fund</a><ul><li id="menu-15523-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children"><a href="/programs/developer/travel/request" title="Travel Fund Request Form" class="sf-depth-4">Request Form</a></li></ul></li><li id="menu-1967-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="/programs/developer/speaker-bureau" title="Linux Developer Speaker Bureau" class="sf-depth-3">Speaker Bureau</a></li><li id="menu-1968-1" class="last odd sf-item-5 sf-depth-3 sf-no-children"><a href="/programs/developer/kernel" title="Funding of Kernel.org" class="sf-depth-3">Funding of Kernel.org</a></li></ul></li><li id="menu-1133-1" class="middle odd sf-item-3 sf-depth-2 sf-total-children-7 sf-parent-children-3 sf-single-children-4 menuparent"><a href="/programs/legal" title="Legal" class="sf-depth-2 menuparent">Legal Programs</a><ul><li id="menu-7345-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-6 sf-parent-children-0 sf-single-children-6 menuparent"><a href="/programs/legal/compliance" title="Open Compliance Program" class="sf-depth-3 menuparent">Open Compliance</a><ul><li id="menu-15533-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/programs/legal/compliance/templates" title="Open Source Compliance Templates" class="sf-depth-4">Templates</a></li><li id="menu-7346-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/programs/legal/compliance/tools" title="Compliance Tools" class="sf-depth-4">Tools</a></li><li id="menu-7347-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children"><a href="/programs/legal/compliance/self-assessment-checklist" title="Self-Assessment Compliance Checklist" class="sf-depth-4">Self-Asssessment Checklist</a></li><li id="menu-7348-1" class="middle even sf-item-4 sf-depth-4 sf-no-children"><a href="/programs/legal/compliance/directory" title="Open Compliance Directory and Rapid Alert System" class="sf-depth-4">Directory and Rapid Alert System</a></li><li id="menu-7349-1" class="middle odd sf-item-5 sf-depth-4 sf-no-children"><a href="/programs/legal/compliance/training-and-education" title="Training and Education" class="sf-depth-4">Training and Education</a></li><li id="menu-9271-1" class="last even sf-item-6 sf-depth-4 sf-no-children"><a href="/programs/legal/compliance/compliance-inquiry" title="Compliance Inquiry" class="sf-depth-4">Compliance Inquiry</a></li></ul></li><li id="menu-3550-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="/programs/legal/defense-fund" title="Legal Defense Fund" class="sf-depth-3">Legal Defense Fund</a></li><li id="menu-1975-1" class="middle odd sf-item-3 sf-depth-3 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/programs/legal/osapa" title="Open Source as Prior Art (OSAPA)" class="sf-depth-3 menuparent">OSAPA</a><ul><li id="menu-5444-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children"><a href="/programs/legal/osapa/faq" title="OSAPA FAQ" class="sf-depth-4">FAQ</a></li></ul></li><li id="menu-1134-1" class="middle even sf-item-4 sf-depth-3 sf-total-children-7 sf-parent-children-0 sf-single-children-7 menuparent"><a href="/programs/legal/trademark" title="Trademark" class="sf-depth-3 menuparent">Linux Trademark</a><ul><li id="menu-3602-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/programs/legal/trademark/attribution" title="Trademark Attribution" class="sf-depth-4">Trademark Attribution</a></li><li id="menu-3604-1" class="middle even sf-item-2 sf-depth-4 sf-no-children"><a href="/programs/legal/trademark/sublicense-agreement" title="Sublicense Agreement" class="sf-depth-4">Sublicense Agreement</a></li><li id="menu-4298-1" class="middle odd sf-item-3 sf-depth-4 sf-no-children"><a href="/programs/legal/trademark/sublicense-request" title="" class="sf-depth-4">Sublicense Request</a></li><li id="menu-4299-1" class="middle even sf-item-4 sf-depth-4 sf-no-children"><a href="/programs/legal/trademark/abuse-report" title="" class="sf-depth-4">Report Abuse</a></li><li id="menu-8806-1" class="middle odd sf-item-5 sf-depth-4 sf-no-children"><a href="/programs/legal/trademark/sublicense-more" title="" class="sf-depth-4">More Information</a></li><li id="menu-3603-1" class="middle even sf-item-6 sf-depth-4 sf-no-children"><a href="/programs/legal/trademark/fair-use" title="Fair Use" class="sf-depth-4">Fair Use</a></li><li id="menu-3601-1" class="last odd sf-item-7 sf-depth-4 sf-no-children"><a href="/programs/legal/trademark/faq" title="FAQ" class="sf-depth-4">FAQ</a></li></ul></li><li id="menu-1977-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/programs/legal/patent-commons" title="Patent Commons Project" class="sf-depth-3">Patent Commons</a></li><li id="menu-3564-1" class="middle even sf-item-6 sf-depth-3 sf-no-children"><a href="/programs/legal/summit" title="Legal Summit" class="sf-depth-3">Legal Summit</a></li><li id="menu-4627-1" class="last odd sf-item-7 sf-depth-3 sf-no-children"><a href="/programs/legal/legal-defenders" title="Legal Defenders" class="sf-depth-3">Legal Defenders</a></li></ul></li><li id="menu-1955-1" class="middle even sf-item-4 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/programs/regional" title="Regional Programs" class="sf-depth-2 menuparent">Regional Programs</a><ul><li id="menu-1996-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children"><a href="http://events.linuxfoundation.org/events/linuxcon-japan" title="" class="sf-depth-3">LinuxCon Japan</a></li></ul></li><li id="menu-7303-1" class="middle odd sf-item-5 sf-depth-2 sf-total-children-3 sf-parent-children-2 sf-single-children-1 menuparent"><a href="/programs/advisory-councils" title="Advisory Councils" class="sf-depth-2 menuparent">Advisory Councils</a><ul><li id="menu-4629-1" class="first odd sf-item-1 sf-depth-3 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/programs/advisory-councils/euc" title="End User Council" class="sf-depth-3 menuparent">End User Council</a><ul><li id="menu-4637-1" class="firstandlast odd sf-item-1 sf-depth-4 sf-no-children"><a href="/programs/advisory-councils/euc/current-topics-interest" title="Current Topics of Interest" class="sf-depth-4">Current Topics of Interest</a></li></ul></li><li id="menu-3553-1" class="middle even sf-item-2 sf-depth-3 sf-total-children-2 sf-parent-children-0 sf-single-children-2 menuparent"><a href="/programs/advisory-councils/tab" title="Technical Advisory Board (TAB)" class="sf-depth-3 menuparent">Technical Advisory Board</a><ul><li id="menu-3552-1" class="first odd sf-item-1 sf-depth-4 sf-no-children"><a href="/programs/advisory-councils/tab/charter" title="TAB Charter" class="sf-depth-4">Charter</a></li><li id="menu-8551-1" class="last even sf-item-2 sf-depth-4 sf-no-children"><a href="/programs/advisory-councils/tab/minutes" title="Tab Minutes" class="sf-depth-4">Minutes</a></li></ul></li><li id="menu-3548-1" class="last odd sf-item-3 sf-depth-3 sf-no-children"><a href="/programs/advisory-councils/vac" title="Vendor Advisory Council (VAC)" class="sf-depth-3">Vendor Advisory Council</a></li></ul></li><li id="menu-21994-1" class="last even sf-item-6 sf-depth-2 sf-no-children"><a href="/programs/core-infrastructure-initiative" title="Core Infrastructure Initiative" class="sf-depth-2">Core Infrastructure Initiative</a></li></ul></li><li id="menu-3647-1" class="middle odd sf-item-5 sf-depth-1 sf-total-children-12 sf-parent-children-3 sf-single-children-9 menuparent"><a href="/collaborate/workgroups" title="Workgroups" class="sf-depth-1 menuparent">Workgroups</a><ul><li id="menu-17668-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/collaborate/workgroups/automotive-grade-linux" title="Automotive Grade Linux" class="sf-depth-2">Automotive Grade Linux</a></li><li id="menu-8559-1" class="middle even sf-item-2 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/collaborate/workgroups/celf" title="CELF" class="sf-depth-2 menuparent">Consumer Electronics</a><ul><li id="menu-14050-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children"><a href="/collaborate/workgroups/consumer-electronics/ltsi-overview" title="LTSI Overview" class="sf-depth-3">Long Term Support Initiative</a></li></ul></li><li id="menu-6222-1" class="middle odd sf-item-3 sf-depth-2 sf-no-children"><a href="/collaborate/workgroups/accessibility" title="Accessibility" class="sf-depth-2">Accessibility</a></li><li id="menu-6238-1" class="middle even sf-item-4 sf-depth-2 sf-no-children"><a href="/collaborate/workgroups/cgl" title="Carrier Grade Linux" class="sf-depth-2">Carrier Grade</a></li><li id="menu-17061-1" class="middle odd sf-item-5 sf-depth-2 sf-no-children"><a href="/collaborate/workgroups/driver-backport/group" title="Driver Backport" class="sf-depth-2">Driver Backport</a></li><li id="menu-6450-1" class="middle even sf-item-6 sf-depth-2 sf-no-children"><a href="/collaborate/workgroups/linux-raid/linuxraid" title="Linux Raid" class="sf-depth-2">Linux Raid</a></li><li id="menu-2495-1" class="middle odd sf-item-7 sf-depth-2 sf-total-children-1 sf-parent-children-0 sf-single-children-1 menuparent"><a href="/collaborate/workgroups/lsb" title="Linux Standard Base (LSB)" class="sf-depth-2 menuparent">Linux Standard Base (LSB)</a><ul><li id="menu-7285-1" class="firstandlast odd sf-item-1 sf-depth-3 sf-no-children"><a href="/collaborate/workgroups/lsb/linux-standard-base-trademark-guidelines" title="Linux Standard Base Trademark Guidelines" class="sf-depth-3">Trademark Guidelines</a></li></ul></li><li id="menu-6230-1" class="middle even sf-item-8 sf-depth-2 sf-no-children"><a href="/collaborate/workgroups/networking/mainpage" title="Kernel Networking" class="sf-depth-2">Networking</a></li><li id="menu-4628-1" class="middle odd sf-item-9 sf-depth-2 sf-total-children-10 sf-parent-children-0 sf-single-children-10 menuparent"><a href="/collaborate/workgroups/openprinting" title="OpenPrinting" class="sf-depth-2 menuparent">OpenPrinting</a><ul><li id="menu-5445-1" class="first odd sf-item-1 sf-depth-3 sf-no-children"><a href="/collaborate/workgroups/openprinting/databasedatabaseintro" title="OpenPrinting Database" class="sf-depth-3">Database</a></li><li id="menu-4635-1" class="middle even sf-item-2 sf-depth-3 sf-no-children"><a href="http://www.openprinting.org/printer_list.cgi" title="OpenPrinting Printer List" class="sf-depth-3">Printers</a></li><li id="menu-4636-1" class="middle odd sf-item-3 sf-depth-3 sf-no-children"><a href="http://www.openprinting.org/driver_list.cgi" title="OpenPrinting Driver List" class="sf-depth-3">Drivers</a></li><li id="menu-5446-1" class="middle even sf-item-4 sf-depth-3 sf-no-children"><a href="http://forums.openprinting.org/" title="OpenPrinting Forums" class="sf-depth-3">Forums</a></li><li id="menu-5447-1" class="middle odd sf-item-5 sf-depth-3 sf-no-children"><a href="/collaborate/workgroups/openprinting/databaseindexfaq" title="OpenPrinting FAQ" class="sf-depth-3">FAQ</a></li><li id="menu-5448-1" class="middle even sf-item-6 sf-depth-3 sf-no-children"><a href="/collaborate/workgroups/openprinting/databasefoomatic" title="OpenPrinting Foomatic" class="sf-depth-3">Foomatic</a></li><li id="menu-5449-1" class="middle odd sf-item-7 sf-depth-3 sf-no-children"><a href="/collaborate/workgroups/openprinting/databasearticles" title="OpenPrinting Articles" class="sf-depth-3">Articles</a></li><li id="menu-5450-1" class="middle even sf-item-8 sf-depth-3 sf-no-children"><a href="/collaborate/workgroups/openprinting/databaseprojects" title="OpenPrinting Projects" class="sf-depth-3">Projects</a></li><li id="menu-5451-1" class="middle odd sf-item-9 sf-depth-3 sf-no-children"><a href="/collaborate/workgroups/openprinting/databasedocumentation" title="OpenPrinting Documentation" class="sf-depth-3">Documentation</a></li><li id="menu-5452-1" class="last even sf-item-10 sf-depth-3 sf-no-children"><a href="/collaborate/workgroups/openprinting/development" title="OpenPrinting Developers" class="sf-depth-3">Developers</a></li></ul></li><li id="menu-5992-1" class="middle even sf-item-10 sf-depth-2 sf-no-children"><a href="/collaborate/workgroups/osapa-working-group/mainpage" title="Open Source As Prior Art" class="sf-depth-2">OSAPA</a></li><li id="menu-7341-1" class="middle odd sf-item-11 sf-depth-2 sf-no-children"><a href="/collaborate/workgroups/spdx" title="Software Package Data Exchange™ (SPDX™) Workgroup" class="sf-depth-2">SPDX</a></li><li id="menu-9178-1" class="last even sf-item-12 sf-depth-2 sf-no-children"><a href="/collaborate/workgroups/faq" title="Workgroups FAQ" class="sf-depth-2">Workgroups FAQ</a></li></ul></li><li id="menu-1945-1" class="last even sf-item-6 sf-depth-1 sf-total-children-3 sf-parent-children-0 sf-single-children-3 menuparent"><a href="/publications" title="Publications" class="sf-depth-1 menuparent">Publications</a><ul><li id="menu-9502-1" class="first odd sf-item-1 sf-depth-2 sf-no-children"><a href="/publications/linux-foundation" title="Linux Foundation Publications" class="sf-depth-2">Linux Foundation</a></li><li id="menu-9500-1" class="middle even sf-item-2 sf-depth-2 sf-no-children"><a href="/publications/compliance" title="Open Source Compliance Publications" class="sf-depth-2">FOSS Compliance</a></li><li id="menu-9501-1" class="last odd sf-item-3 sf-depth-2 sf-no-children"><a href="/publications/workgroup" title="Linux Foundation Workgroup Publications" class="sf-depth-2">Workgroup</a></li></ul></li></ul></div>    
+          <div id="logo-title">
+        
+                              <div id="site-name"><strong>
+              <a href="/" title="Home" rel="home">
+              The Linux Foundation              </a>
+            </strong></div>
+                  
+        
+      </div> <!-- /#logo-title -->
+    
+    
+  </div></div> <!-- /#header-inner, /#header -->
+
+  <div id="page"><div id="page-inner">
+
+    <a name="navigation-top" id="navigation-top"></a>
+          <div id="skip-to-nav"><a href="#navigation">Skip to Navigation</a></div>
+    
+    <div id="main"><div id="main-inner" class="clear-block with-navbar">
+
+      <div id="content"><div id="content-inner">
+
+        
+        
+                  <div id="content-header">
+            <div class="node-links">
+        <ul class="links inline"><li class="print_html first"><a href="/print/5253" title="Display a printer-friendly version of this page." class="print-page" rel="nofollow">Print</a></li>
+<li class="addthis"><span><div class='addthis_toolbox addthis_default_style ' addthis:url='http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge' addthis:title='bridge' ><a class='addthis_toolbox_item addthis_button_google_plusone' g:plusone:size="medium"></a><a class='addthis_toolbox_item addthis_button_facebook_like' fb:like:layout="button_count"&gt;></a><a class='addthis_toolbox_item addthis_button_tweet' ></a></div></span></li>
+<li class="print_mail last"><a href="/printmail/5253" title="Send this page by e-mail." class="print-mail" rel="nofollow">Email</a></li>
+</ul>      </div>
+      
+                          <h1 class="title">bridge</h1>
+                                                          </div> <!-- /#content-header -->
+        
+        <div id="content-area">
+          <div id="node-5253" class="node clear-block">
+
+
+
+  <div class="meta">
+      <span class="submitted">By Linux Foundatio... - November 19, 2009 - 10:23am</span>
+  
+      <div class="terms terms-inline"><ul class="links inline"><li class="taxonomy_term_41 first last"><a href="/tags/networking" rel="tag" title="">networking</a></li>
+</ul></div>
+    </div>
+
+  <div class="content">
+    <p>Translations: <a rel="nofollow" title="http://xgu.ru/wiki/Linux_Bridge" class="external text" href="http://xgu.ru/wiki/Linux_Bridge">russian</a> ,  <a rel="nofollow" title="http://wiki.pardus-linux.org/index.php/Programlar:Bridge-Utilities" class="external text" href="http://wiki.pardus-linux.org/index.php/Programlar:Bridge-Utilities">Turkish</a></p>
+<p>A bridge is a way to connect two <a title="Ethernet" class="extiw" href="http://en.wikipedia.com/wiki/Ethernet">Ethernet</a> segments together in a protocol independent way.  Packets are forwarded based on Ethernet address, rather than IP address (like a router). Since forwarding is done at Layer 2, all protocols can go transparently through a bridge.</p>
+<p>The Linux bridge code implements a subset of the ANSI/IEEE 802.1d standard. <a rel="nofollow" title="http://standards.ieee.org/getieee802/" class="external autonumber" href="http://standards.ieee.org/getieee802/">[1]</a>. The original Linux bridging was first done in Linux 2.2, then rewritten by Lennert Buytenhek. The code for bridging has been integrated into 2.4 and 2.6 kernel series.</p>
+<table summary="Contents" class="toc" id="toc">
+<tr>
+<td>
+<h2>Contents</h2>
+<ul>
+<li class="toclevel-1"><a href="#Bridging_and_Firewalling">1 Bridging and Firewalling</a></li>
+<li class="toclevel-1"><a href="#Status">2 Status</a></li>
+<li class="toclevel-1"><a href="#Downloading">3 Downloading</a></li>
+<li class="toclevel-1"><a href="#Kernel_Configuration">4 Kernel Configuration</a></li>
+<li class="toclevel-1"><a href="#Manual_Configuration">5 Manual Configuration</a>
+<ul>
+<li class="toclevel-2"><a href="#Network_cards">5.1 Network cards</a></li>
+<li class="toclevel-2"><a href="#Module_loading">5.2 Module loading</a></li>
+<li class="toclevel-2"><a href="#Creating_a_bridge_device">5.3 Creating a bridge device</a></li>
+<li class="toclevel-2"><a href="#Adding_devices_to_a_bridge">5.4 Adding devices to a bridge</a></li>
+<li class="toclevel-2"><a href="#Showing_devices_in_a_bridge">5.5 Showing devices in a bridge</a></li>
+<li class="toclevel-2"><a href="#Spanning_Tree_Protocol">5.6 Spanning Tree Protocol</a>
+<ul>
+<li class="toclevel-3"><a href="#STP_tuning">5.6.1 STP tuning</a>
+<ul>
+<li class="toclevel-4"><a href="#Bridge_priority">5.6.1.1 Bridge priority</a></li>
+<li class="toclevel-4"><a href="#Path_priority_and_cost">5.6.1.2 Path priority and cost</a></li>
+<li class="toclevel-4"><a href="#Forwarding_delay">5.6.1.3 Forwarding delay</a></li>
+<li class="toclevel-4"><a href="#Hello_time">5.6.1.4 Hello time</a></li>
+<li class="toclevel-4"><a href="#Max_age">5.6.1.5 Max age</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Snooping">5.7 Multicast (IGMP) snooping</a></li>
+<li class="toclevel-2"><a href="#Sample_setup">5.8 Sample setup</a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Configuration_with_.2Fetc.2Fnet">6 Configuration with /etc/net</a></li>
+<li class="toclevel-1"><a href="#FAQ">7 FAQ</a>
+<ul>
+<li class="toclevel-2"><a href="#What_does_a_bridge_do.3F">7.1 What does a bridge do?</a></li>
+<li class="toclevel-2"><a href="#Is_it_protocol_independent.3F">7.2 Is it protocol independent?</a></li>
+<li class="toclevel-2"><a href="#Why_is_this_code_better_than_a_switch.3F">7.3 Why is this code better than a switch?</a></li>
+<li class="toclevel-2"><a href="#Why_is_this_code_worse_than_a_switch.3F">7.4 Why is this code worse than a switch?</a></li>
+<li class="toclevel-2"><a href="#What_is_the_performance_of_the_bridge.3F">7.5 What is the performance of the bridge?</a></li>
+<li class="toclevel-2"><a href="#My_bridge_does_not_show_up_in_traceroute.21">7.6 My bridge does not show up in traceroute!</a></li>
+<li class="toclevel-2"><a href="#It_doesn.27t_work.21">7.7 It doesn't work!</a></li>
+<li class="toclevel-2"><a href="#No_traffic_gets_trough_.28except_ARP_and_STP.29">7.8 No traffic gets trough (except ARP and STP)</a></li>
+<li class="toclevel-2"><a href="#Does_bridging_work_on_2.2.3F">7.9 Does bridging work on 2.2?</a></li>
+<li class="toclevel-2"><a href="#Are_there_plans_for_RSTP_.28802.1w.29_support.3F">7.10 Are there plans for RSTP (802.1w) support?</a></li>
+<li class="toclevel-2"><a href="#What_can_be_bridged.3F">7.11 What can be bridged?</a></li>
+<li class="toclevel-2"><a href="#Can_I_do_bridging_in_combination_with_netfilter.2Fiptables.3F">7.12 Can I do bridging in combination with netfilter/iptables?</a></li>
+<li class="toclevel-2"><a href="#Does_it_work_with_Token_Ring_.2C_FDDI.2C_or_Firewire.3F">7.13 Does it work with Token Ring , FDDI, or Firewire?</a></li>
+<li class="toclevel-2"><a href="#I_keep_getting_the_message_retransmitting_tcn_bpdu.21">7.14 I keep getting the message retransmitting tcn bpdu!</a></li>
+<li class="toclevel-2"><a href="#It_doesn.27t_work_with_my_regular_Ethernet_card.21">7.15 It doesn't work with my regular Ethernet card!</a></li>
+<li class="toclevel-2"><a href="#It_doesn.27t_work_with_my_Wireless_card.21">7.16 It doesn't work with my Wireless card!</a></li>
+<li class="toclevel-2"><a href="#I_still_don.27t_understand.21.21">7.17 I still don't understand!!</a></li>
+<li class="toclevel-2"><a href="#I_get_the_error_.27too_much_work_in_interrupt.27">7.18 I get the error 'too much work in interrupt'</a></li>
+<li class="toclevel-2"><a href="#Does_DHCP_work_over.2Fthrough_a_bridge.3F">7.19 Does DHCP work over/through a bridge?</a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Contact_Info">8 Contact Info</a></li>
+<li class="toclevel-1"><a href="#External_Links">9 External Links</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<p><a name="Bridging_and_Firewalling"></a></p>
+<h2>Bridging and Firewalling</h2>
+<p></p>
+<p>A Linux bridge is more powerful than a pure hardware bridge because it can also filter and shape traffic.  The combination of bridging and firewalling is done with the companion project  <a rel="nofollow" title="http://ebtables.sourceforge.net" class="external text" href="http://ebtables.sourceforge.net">ebtables</a>.</p>
+<p><a name="Status"></a></p>
+<h2>Status</h2>
+<p></p>
+<p>The code is updated as part of the 2.4 and 2.6 kernels available at kernel.org.</p>
+<p>Possible future enhancements are:</p>
+<ul>
+<li>Document STP filtering</li>
+<li>Netlink interface to control bridges (prototype in 2.6.18)</li>
+<li>STP should be in user space</li>
+<li>Support RSTP and other 802.1d STP extensions</li>
+</ul>
+<p><a name="Downloading"></a></p>
+<h2>Downloading</h2>
+<p></p>
+<p>Bridging is supported in the current 2.4 (and 2.6) kernels from all the major distributors. The required administration utilities are in the bridge-utils package in most distributions. Package releases are maintained on the <a rel="nofollow" title="http://sourceforge.net/project/showfiles.php?group_id=26089" class="external text" href="http://sourceforge.net/project/showfiles.php?group_id=26089">Download</a> page.</p>
+<p>You can also build your own up to date version by getting the latest kernel from <a rel="nofollow" title="http://kernel.org" class="external text" href="http://kernel.org">kernel.org</a> and build the utilities based from the source code in bridge-utils GIT repository.</p>
+<pre>
+ $ git clone git://git.kernel.org/pub/scm/linux/kernel/git/shemminger/bridge-utils.git
+ $ cd bridge-utils
+ $ autoconf
+ $ ./configure
+</pre><p><a name="Kernel_Configuration"></a></p>
+<h2>Kernel Configuration</h2>
+<p></p>
+<p>You need to enable bridging in the kernel. Set &quot;networking -&gt; 802.1d Ethernet Bridging&quot; to either yes or module</p>
+<p><a name="Manual_Configuration"></a></p>
+<h2>Manual Configuration</h2>
+<p> <a name="Network_cards"></a></p>
+<h3>Network cards</h3>
+<p></p>
+<p>Before you start make sure both network cards are set up and working properly. Don't set the IP address, and don't let the startup scripts run DHCP on the ethernet interfaces either. The IP address needs to be set after the bridge has been configured.</p>
+<p>The command ifconfig should show both network cards, and they should be DOWN.</p>
+<p><a name="Module_loading"></a></p>
+<h3>Module loading</h3>
+<p></p>
+<p>In most cases, the bridge code is built as a module. If the module is configured and installed correctly, it will get automatically loaded on the first brctl command.</p>
+<p>If your bridge-utilities have been correctly built and your kernel and bridge-module are OK, then issuing a brctl should show a small command synopsis.</p>
+<pre>
+# brctl
+# commands:
+        addbr           &lt;bridge&gt;                add bridge
+        delbr           &lt;bridge&gt;                delete bridge
+        addif           &lt;bridge&gt; &lt;device&gt;       add interface to bridge
+        delif           &lt;bridge&gt; &lt;device&gt;       delete interface from bridge
+        setageing       &lt;bridge&gt; &lt;time&gt;         set ageing time
+        setbridgeprio   &lt;bridge&gt; &lt;prio&gt;         set bridge priority
+        setfd           &lt;bridge&gt; &lt;time&gt;         set bridge forward delay
+        sethello        &lt;bridge&gt; &lt;time&gt;         set hello time
+        setmaxage       &lt;bridge&gt; &lt;time&gt;         set max message age
+        setpathcost     &lt;bridge&gt; &lt;port&gt; &lt;cost&gt;  set path cost
+        setportprio     &lt;bridge&gt; &lt;port&gt; &lt;prio&gt;  set port priority
+        show                                    show a list of bridges
+        showmacs        &lt;bridge&gt;                show a list of mac addrs
+        showstp         &lt;bridge&gt;                show bridge stp info
+        stp             &lt;bridge&gt; &lt;state&gt;        turn stp on/off
+</pre><p><a name="Creating_a_bridge_device"></a></p>
+<h3>Creating a bridge device</h3>
+<p></p>
+<p>The command</p>
+<pre>
+ brctl addbr &quot;bridgename&quot;
+</pre><p>creates a logical bridge instance with the name bridgename. You will need at least one logical instance to do any bridging at  all. You can interpret the logical bridge as a container for the interfaces taking part in the bridging. Each bridging instance is represented by a new network interface.</p>
+<p>The corresponding shutdown command is:</p>
+<pre>
+ brctl delbr bridgename
+</pre><p><a name="Adding_devices_to_a_bridge"></a></p>
+<h3>Adding devices to a bridge</h3>
+<p></p>
+<p>The command</p>
+<pre>
+ brctl addif bridgename device
+</pre><p>adds the network device device to take part in the bridging of &quot;bridgename.&quot; All the devices contained in a bridge act as one big network. It is not possible to add a device to multiple bridges or  bridge a bridge device, because it just wouldn't make any sense! The bridge will take a short amount of time when a device is added to learn the Ethernet addresses on the segment before starting to forward.</p>
+<p>The corresponding command to take an interface out of the bridge is:</p>
+<pre>
+ brctl delif  bridgename device
+</pre><p><a name="Showing_devices_in_a_bridge"></a></p>
+<h3>Showing devices in a bridge</h3>
+<p></p>
+<p>The brctl show command gives you a summary about the overall bridge status, and the instances running as shown below:</p>
+<pre>
+ # brctl addbr br549
+ # brctl addif br549 eth0
+ # brctl addif br549 eth1
+ # brctl show
+ bridge name     bridge id               STP enabled     interfaces
+ br549           8000.00004c9f0bd2       no              eth0
+                                                         eth1
+</pre><p>Once a bridge is running the brctl showmacs will show information about network addresses of traffic being forwarded (and the bridge itself).</p>
+<pre>
+ # brctl showmacs br549
+ port no mac addr                is local?       ageing timer
+   1     00:00:4c:9f:0b:ae       no                17.84
+   1     00:00:4c:9f:0b:d2       yes                0.00
+   2     00:00:4c:9f:0b:d3       yes                0.00
+   1     00:02:55:1a:35:09       no                53.84
+   1     00:02:55:1a:82:87       no                11.53
+  ...
+</pre><p>The aging time is the number of seconds a MAC address will be kept in the forwarding database after having received a packet from this MAC address. The entries in the forwarding database are periodically timed out to ensure they won't stay around forever. Normally there should be no need to modify this parameter, but it can be changed with (time is in seconds).</p>
+<pre>
+  # brctl setageing bridgename time
+</pre><p>Setting ageing time to zero makes all entries permanent.</p>
+<p><a name="Spanning_Tree_Protocol"></a></p>
+<h3>Spanning Tree Protocol</h3>
+<p></p>
+<p>If you are running multiple or redundant bridges, then you need to enable the Spanning Tree Protocol (<a title="Bridge STP" href="/collaborate/workgroups/networking/bridge_stp">STP</a>) to handle multiple hops and avoid cyclic routes.</p>
+<pre>
+ # brctl stp br549 on
+</pre><p>You can see the STP parameters with:</p>
+<pre>
+ # brctl showstp br549
+ br549
+  bridge id              8000.00004c9f0bd2
+  designated root        0000.000480295a00
+  root port                 1                    path cost                104
+  max age                  20.00                 bridge max age           200.00
+  hello time                2.00                 bridge hello time         20.00
+  forward delay           150.00                 bridge forward delay      15.00
+  ageing time             300.00                 gc interval                0.00
+  hello timer               0.00                 tcn timer                  0.00
+  topology change timer     0.00                 gc timer                   0.33
+  flags
+ 
+ eth0 (1)
+  port id                8001                    state                   forwarding
+  designated root        0000.000480295a00       path cost                100
+  designated bridge      001e.00048026b901       message age timer         17.84
+  designated port        80c1                    forward delay timer        0.00
+  designated cost           4                    hold timer                 0.00
+  flags
+ 
+ eth1 (2)
+  port id                8002                    state                   disabled
+  designated root        8000.00004c9f0bd2       path cost                100
+  designated bridge      8000.00004c9f0bd2       message age timer          0.00
+  designated port        8002                    forward delay timer        0.00
+  designated cost           0                    hold timer                 0.00
+  flags
+</pre><p><a name="STP_tuning"></a></p>
+<h4>STP tuning</h4>
+<p></p>
+<p>There are a number of parameters related to the <a title="Bridge STP" href="/collaborate/workgroups/networking/bridge_stp">Spanning Tree Protocol</a> that can be configured. The code autodetects the speed of the link and other parameters, so these usually don't need to be changed.</p>
+<p><a name="Bridge_priority"></a></p>
+<h5>Bridge priority</h5>
+<p></p>
+<p>Each bridge has a relative priority and cost. Each interface is associated with a port (number) in the STP code. Each has a priority and a cost, that is used to decide which is the shortest path to forward a packet. The lowest cost path is always used unless the other path is down. If you have multiple bridges and interfaces then you may need to adjust the priorities to achieve optimium performance.</p>
+<pre>
+  # brctl setbridgeprio bridgename priority
+</pre><p>The bridge with the lowest priority will be elected as the root bridge. The root bridge is the &quot;central&quot; bridge in the spanning tree.</p>
+<p><a name="Path_priority_and_cost"></a></p>
+<h5>Path priority and cost</h5>
+<p></p>
+<p>Each interface in a bridge could have a different speed and this value is used when deciding which link to use. Faster interfaces should have lower costs.</p>
+<pre>
+ # brctl setpathcost bridge port cost
+</pre><p>For multiple ports with the same cost there is also a priority</p>
+<p><a name="Forwarding_delay"></a></p>
+<h5>Forwarding delay</h5>
+<p></p>
+<p>Forwarding delay time is the time spent in each of the Listening and Learning states before the Forwarding state is entered. This delay is so that when a new bridge comes onto a busy network it looks at some traffic before participating.</p>
+<pre>
+ #  brctl setfd bridgename time
+</pre><p><a name="Hello_time"></a></p>
+<h5>Hello time</h5>
+<p></p>
+<p>Periodically, a hello packet is sent out by the Root Bridge and the Designated Bridges. Hello packets are used to communicate information about the topology throughout the entire Bridged Local Area Network.</p>
+<pre>
+ # brctl sethello bridgename time
+</pre><p><a name="Max_age"></a></p>
+<h5>Max age</h5>
+<p></p>
+<p>If a another bridge in the spanning tree does not send out a hello packet for a long period of time, it is assumed to be dead. This timeout is set with:</p>
+<pre>
+ # brctl maxage  bridgename time
+</pre><p><a name="Snooping"></a></p>
+<h3>Multicast (IGMP) snooping</h3>
+<p></p>
+<p>IGMP snooping support is not yet included in bridge-utils or iproute2, but it can be easily controlled through sysfs interface. For brN, the settings can be found under /sys/devices/virtual/net/brN/bridge.</p>
+<pre>
+multicast_snooping
+</pre><p>This option allows the user to disable IGMP snooping completely. It also allows the user to reenable snooping when it has been automatically disabled due to hash collisions. If the collisions have not been resolved however the system will refuse to reenable snooping.</p>
+<pre>
+multicast_router
+</pre><p>This allows the user to forcibly enable/disable ports as having multicast routers attached. A port with a multicast router will receive all multicast traffic.</p>
+<p>The value 0 disables it completely. The default is 1 which lets the system automatically detect the presence of routers (currently this is limited to picking up queries), and 2 means that the ports will always receive all multicast traffic.</p>
+<p>Note: this setting can be enabled/disable on a per-port basis, also through sysfs interface (e.g. if eth0 is some bridge's active port, then you can adjust /sys/...../eth0/brport/multicast_router)</p>
+<pre>
+hash_{max,elasticity}
+</pre><p>These settings allow the user to control the hash elasticity/max parameters. The elasticity setting does not take effect until the next new multicast group is added.  At which point it is checked and if after rehashing it still can't be satisfied then snooping will be disabled.</p>
+<p>The max setting on the other hand takes effect immediately. It must be a power of two and cannot be set to a value less than the current number of multicast group entries. This is the only way to shrink the multicast hash.</p>
+<pre>
+remaining multicast_* options
+</pre><p>These allow the user to control various values related to IGMP snooping.</p>
+<p>More details about the options, some discussions and rationale can be found in <a href="http://thread.gmane.org/gmane.linux.network/153338" title="http://thread.gmane.org/gmane.linux.network/153338">http://thread.gmane.org/gmane.linux.network/153338</a></p>
+<p><a name="Sample_setup"></a></p>
+<h3>Sample setup</h3>
+<p></p>
+<p>The basic setup of a bridge is done like:</p>
+<pre>
+ # ifconfig eth0 0.0.0.0
+ # ifconfig eth1 0.0.0.0
+ # brctl addbr mybridge
+ # brctl addif mybridge eth0
+ # brctl addif mybridge eth1 
+ # ifconfig mybridge up
+</pre><p>This will set the host up as a pure bridge, it will not have an IP address for itself, so it can not be remotely accessed (or hacked) via TCP/IP.</p>
+<p>Optionally you can configure the virtual interface mybridge to take part in your network. It behaves like one interface (like a normal network card). Exactly that way you configure it, replacing the previous command with something like:</p>
+<pre>
+ # ifconfig mybridge 192.168.100.5 netmask 255.255.255.0
+</pre><p>If you want your bridge to automatically get its IP address from the ADSL modem via DHCP (or a similar configuration), do this:</p>
+<pre>
+ # ifconfig eth0 0.0.0.0
+ # ifconfig eth1 0.0.0.0
+ # brctl addbr mybridge
+ # brctl addif mybridge eth0
+ # brctl addif mybridge eth1 
+ # dhclient mybridge
+</pre><p>If you do this many times, you may end up with lots of dhclient processes. Either kill them impolitely or learn about <a rel="nofollow" title="http://linuxreviews.org/man/omshell/" class="external text" href="http://linuxreviews.org/man/omshell/">omshell(1)</a>.</p>
+<p><a name="Configuration_with_.2Fetc.2Fnet"></a></p>
+<h2>Configuration with /etc/net</h2>
+<p>In <a title="Etcnet" href="/collaborate/workgroups/networking/etcnet">/etc/net</a> we first configure two ethernet devices port0 and port1:</p>
+<pre>
+ # cat &gt;&gt; /etc/net/iftab
+ port0 mac 00:13:46:66:01:5e
+ port1 mac 00:13:46:66:01:5f
+ ^D
+ # mkdir /etc/net/ifaces/port0
+ # cat &gt; /etc/net/ifaces/port0/options
+ TYPE=eth
+ MODULE=via-rhine
+ # mkdir /etc/net/ifaces/port1
+ # cat &gt; /etc/net/ifaces/port1/options
+ TYPE=eth
+ MODULE=via-rhine
+ ^D
+</pre><p>Then we describe the bridge:</p>
+<pre>
+ # mkdir /etc/net/ifaces/mybridge
+ # cat &gt; /etc/net/ifaces/mybridge/options
+ TYPE=bri
+ HOST='port0 port1'
+ ^D
+ # cat &gt; /etc/net/ifaces/mybridge/brctl
+ stp AUTO on
+ ^D
+</pre><p>Now we can use &quot;ifup mybridge&quot; to bring it up. port0 and port1 will be brought up automatically.</p>
+<p><a name="FAQ"></a></p>
+<h2>FAQ</h2>
+<p> <a name="What_does_a_bridge_do.3F"></a></p>
+<h3>What does a bridge do?</h3>
+<p>A bridge transparently relays traffic between multiple network interfaces. In plain English this means that a bridge connects two or more physical Ethernets together to form one bigger (logical) Ethernet.</p>
+<p><a name="Is_it_protocol_independent.3F"></a></p>
+<h3>Is it protocol independent?</h3>
+<p>Yes. The bridge knows nothing about protocols, it only sees Ethernet frames. As such, the bridging functionality is protocol independent, and there should be no trouble relaying IPX, NetBEUI, IP, IPv6, etc.</p>
+<p><a name="Why_is_this_code_better_than_a_switch.3F"></a></p>
+<h3>Why is this code better than a switch?</h3>
+<p>Please note that this code wasn't written with the intent of having Linux boxes take over from dedicated networking hardware. Don't see the Linux bridging code as a replacement for switches, but rather as an extension of the Linux networking capabilities. Just as there are situations where a Linux router is better than a dedicated router (and vice versa), there are situations where a Linux bridge is better than a dedicated bridge (and vice versa).</p>
+<p>Most of the power of the Linux bridging code lies in its flexibility. There is a whole lot of bizarre stuff you can do with Linux already (read Linux Advanced Routing and Traffic Control document to see some of the possiblities), and the bridging code adds some more filter into the mix.</p>
+<p>One of the most significant advantages of a Linux solution over a dedicated solution that come to mind is Linux' extensive firewalling capabilities. It is possible to use the full functionality of netfilter (iptables) in combination with bridging, which provides way more functionality than most proprietary offerings do.</p>
+<p><a name="Why_is_this_code_worse_than_a_switch.3F"></a></p>
+<h3>Why is this code worse than a switch?</h3>
+<p>In order to act a a bridge, the network device must be placed into promiscuous mode which means it receives all traffic on a network. On a really busy network, this can eat significant bandwidth out of the processor, memory slowing the system down. The answer is to setup either a separate dedicated Linux box as the bridge, or use a hardware switch.</p>
+<p><a name="What_is_the_performance_of_the_bridge.3F"></a></p>
+<h3>What is the performance of the bridge?</h3>
+<p>The performance is limited by the network cards used and the processor. A research paper was done by James Yu at Depaul University comparing Linux bridging with a Catalyst switch  <a rel="nofollow" title="http://facweb.cti.depaul.edu/jyu/Publications/Yu-Linux-TSM2004.pdf" class="external text" href="http://facweb.cti.depaul.edu/jyu/Publications/Yu-Linux-TSM2004.pdf">Yu-Linux-TSM2004.pdf</a></p>
+<p><a name="My_bridge_does_not_show_up_in_traceroute.21"></a></p>
+<h3>My bridge does not show up in traceroute!</h3>
+<p>It's not supposed to. The operation of a bridge is (supposed to be) fully transparent to the network, the networks that a bridge connects together are actually to be viewed as one big network. That's why the bridge does not show up in traceroute; the packets do not feel like they are crossing a subnet boundary.</p>
+<p>For more information on this, read a book about TCP/IP networking.</p>
+<p><a name="It_doesn.27t_work.21"></a></p>
+<h3>It doesn't work!</h3>
+<p>It says: &quot;br_add_bridge: bad address&quot; when I try to add a bridge!</p>
+<p>Either your kernel is old (2.2 or earlier), or you forgot to configure Ethernet bridging into your kernel.</p>
+<p><a name="No_traffic_gets_trough_.28except_ARP_and_STP.29"></a></p>
+<h3>No traffic gets trough (except ARP and STP)</h3>
+<p>Your kernel might have ethernet filtering (ebtables, bridge-nf, arptables) enabled, and traffic gets filtered. The easiest way to disable this is to go to /proc/sys/net/bridge. Check if the bridge-nf-* entries in there are set to 1; in that case, set them to zero and try again.</p>
+<pre>
+ # cd /proc/sys/net/bridge
+ # ls
+ bridge-nf-call-arptables  bridge-nf-call-iptables
+ bridge-nf-call-ip6tables  bridge-nf-filter-vlan-tagged
+ # for f in bridge-nf-*; do echo 0 &gt; $f; done
+</pre><p><a name="Does_bridging_work_on_2.2.3F"></a></p>
+<h3>Does bridging work on 2.2?</h3>
+<p>The base kernel for 2.2, did not support the current bridging code. The original development was on 2.2, and there used to be patches available for it. But these patches are no longer maintained.</p>
+<p><a name="Are_there_plans_for_RSTP_.28802.1w.29_support.3F"></a></p>
+<h3>Are there plans for RSTP (802.1w) support?</h3>
+<p>Yes, work is being done to integrate RSTP support in a future 2.6 release. The code was done for a version of 2.4 and needs to be cleaned up, tested and updated.</p>
+<p><a name="What_can_be_bridged.3F"></a></p>
+<h3>What can be bridged?</h3>
+<p>Linux bridging is very flexible; the LAN's can be either traditional Ethernet device's, or pseudo-devices such as PPP, VPN's or VLAN's. The only restrictions are that the devices:</p>
+<ul>
+<li>All devices share the same maximum packet size (MTU). The bridge doesn't fragment packets.</li>
+<li>Devices must look like Ethernet. i.e have 6 byte source and destination address.</li>
+<li>Support promiscuous operation. The bridge needs to be able to receive all network traffic, not just traffic destined for its own address.</li>
+<li>Allow source address spoofing. The bridge must be able to send data over network as if it came from another host.</li>
+</ul>
+<p><a name="Can_I_do_bridging_in_combination_with_netfilter.2Fiptables.3F"></a></p>
+<h3>Can I do bridging in combination with netfilter/iptables?</h3>
+<p>Yes. The code for this is available in most kernels. See ebtables project.</p>
+<p><a name="Does_it_work_with_Token_Ring_.2C_FDDI.2C_or_Firewire.3F"></a></p>
+<h3>Does it work with <a title="Token_Ring" class="extiw" href="http://en.wikipedia.com/wiki/Token_Ring">Token Ring </a>, <a title="FDDI" class="extiw" href="http://en.wikipedia.com/wiki/FDDI">FDDI</a>, or Firewire?</h3>
+<p>No, the addressing and frame sizes are different.</p>
+<p><a name="I_keep_getting_the_message_retransmitting_tcn_bpdu.21"></a></p>
+<h3>I keep getting the message retransmitting tcn bpdu!</h3>
+<p>It means that your Linux bridge is retransmitting a Topology Change Notification Bridge Protocol Data Unit (so now you know what the letters are for&nbsp;:-). Seriously, there is probably another switch (or Linux bridge) nearby that isn't complying to the rules of the spanning tree protocol (which is what bridges speak).</p>
+<p>In each bridged local area network, there is one 'master bridge', which is also called the root bridge. You can find out which bridge this is using brctl.</p>
+<p>When the topology of a bridged local area network changes (f.e. somebody unplugs a cable between two bridges), the bridge which detects this sends a topology change notification to the root bridge. The root bridge will respond to this by setting a 'topology changed' bit in the hello packets it sends out for the next X seconds (X usually being 30). This way, all bridges will learn of the topology change, so that they can take measures like timing out learned MAC entries faster for example.</p>
+<p>After having sent out a topology change notification, if a bridge does not find the 'topology changed' bit set in the hello packets received (which in essence serves as the 'acknowledgment' of the topology change notification), it concludes that the topology change notification was lost. So it will retransmit it. However, some bridges run lobotomized implementations of the Spanning Tree Protocol which causes them not to acknowledge topology change notifications. If you have one of those bridges as your root bridge, all of the other bridges will keep retransmitting their topology changed notifications. Which will lead to these kinds of syslog messages.</p>
+<p>There are a number of things you can do:</p>
+<ul>
+<li>Find out which bridge is the root bridge, find out where it is located, and what internetworking software it runs. Please report this info to the mailing list (or to me directly), so that I can keep a blacklist.</li>
+<li>Force the linux bridge to be the root bridge. See what the priority of the current root bridge is, and use the brctl 'setbridgeprio' command to set the priority of the linux bridge to 1 lower. (The bridge with the lowest priority always becomes the root bridge.)</li>
+<li>Disable the spanning tree protocol on your linux bridge altogether. In this case, watch out for bridging loops! If you have loops in your topology, and if no bridge in the loop is running the spanning tree protocol, mayhem will come your way, as packets will be forwarded forever. Don't Do This(TM).</li>
+</ul>
+<p><a name="It_doesn.27t_work_with_my_regular_Ethernet_card.21"></a></p>
+<h3>It doesn't work with my regular Ethernet card!</h3>
+<p>Unfortunately, some network cards have buggy drivers that fail under load. The situation is improving, so having a current kernel and network driver can help. Also try swapping with another brand.</p>
+<p>Please report all problems to the Bridge mailing list: <a href="mailto:bridge@osdl.org">bridge@osdl.org</a>. If your network card doesn't work (even without bridging) then try the Linux networking mailing list <a href="mailto:linux-net@vger.kernel.org">linux-net@vger.kernel.org</a></p>
+<p><a name="It_doesn.27t_work_with_my_Wireless_card.21"></a></p>
+<h3>It doesn't work with my Wireless card!</h3>
+<p>This is a known problem, and it is not caused by the bridge code. Many wireless cards don't allow spoofing of the source address. It is a firmware restriction with some chipsets. You might find some information in the bridge mailing list archives to help. Has anyone found a way to get around Wavelan not allowing anything but its own MAC address? (answer by Michael Renzmann (mrenzmann at compulan.de))</p>
+<p>Well, for 99% of computer users there will never be a way to get rid of this. For this function a special firmware is needed. This firmware can be loaded into the RAM of any WaveLAN card, so it could do its job with bridging. But there is no documentation on the interface available to the public. The only way to achieve this is to have a full version of the hcf library which controls every function of the card and also allows accessing the card's RAM. To get this full version Lucent wants to know that it will be a financial win for them, also you have to sign an NDA. So be sure that you won't most probably get access to this peace of software until Lucent does not change its mind in this (which I doubt never will happen).</p>
+<p>If you urgently need to have a wireless LAN card which is able to bridge, you should use one of those having the prism chipset onboard (manufactured by Harris Intersil). There are drivers for those cards available at <a href="http://www.linux-wlan.com" title="www.linux-wlan.com">www.linux-wlan.com</a> (which is the website from Absoval), and I found a mail that says that there is the necessary firmware and an upload tool available for Linux to the public. If you need additional features of an access point you should also talk to Absoval.</p>
+<p><a name="I_still_don.27t_understand.21.21"></a></p>
+<h3>I still don't understand!!</h3>
+<p>Doing full bridging of wireless (802.11) requires supporting <a title="WDS (not yet written)" class="new" href="/node/add/wiki?gids[]=5066"> WDS </a>. The current implementation doesn't do it.</p>
+<p>It is possible to do limited wireless to Ethernet functionality with some wireless drivers. This requires the device to be able to support a different sender address and source address. That is what WDS provides.</p>
+<p>There are ways to make it work, but it is not always straightforward and you probably won't get it right without a pretty solid understanding of 802.11, it's modes, and the frame header format.</p>
+<p><a name="I_get_the_error_.27too_much_work_in_interrupt.27"></a></p>
+<h3>I get the error 'too much work in interrupt'</h3>
+<p>This is because the network card is getting lots of packets. There are a few things you can try. First, build the driver with NAPI support (if it isn't on by default). NAPI means the driver will do the receive processing at soft IRQ, not at the low level interrupt.</p>
+<p>If the driver doesn't support NAPI, you can try to increase the amount of work a driver will attempt to do in an interrupt. For 3c59x this is done with the option max_interrupt_work (so add something like 'options 3c59x max_interrupt_work=10000' to your /etc/modules.conf file), other cards might have similar options.</p>
+<p><a name="Does_DHCP_work_over.2Fthrough_a_bridge.3F"></a></p>
+<h3>Does DHCP work over/through a bridge?</h3>
+<p>The bridge will forward DHCP traffic (broadcasts) and responses. You can also use DHCP to set the local IP address of the bridge pseudo-interface.</p>
+<p>One common mistake is that the default bridge forwarding delay setting is 30 seconds. This means that for the first 30 seconds after an interface joins a bridge, it won't send anything. This is because if the bridge is being used in a complex topology, it needs to discover other bridges and not create loops. This problem was one of the reasons for the creation of Rapid Spanning Tree Protocol (RSTP).</p>
+<p>If the bridge is being used standalone (no other bridges near by). Then it is safe to turn the forwarding delay off (set it to zero), before adding interface to a bridge. Then you can run DHCP client right away.</p>
+<pre>
+ # brctl setfd br0 0
+ # brctl addif br0 eth0
+ # dhclient eth0
+</pre><p><a name="Contact_Info"></a></p>
+<h2>Contact Info</h2>
+<p></p>
+<p>The code is currently maintained by Stephen Hemminger  <a rel="nofollow" title="mailto:shemminger@osdl.org" class="external text" href="mailto:shemminger@osdl.org">&lt;shemminger@osdl.org&gt;</a> for both 2.4 and 2.6 Linux.  Bridge bugs and enhancements are discussed on the Bridge mailing list  <a rel="nofollow" title="mailto:bridge@osdl.org" class="external text" href="mailto:bridge@osdl.org">&lt;bridge@osdl.org&gt;</a>. The list is open to anyone interested, use the web mailman interface  <a rel="nofollow" title="http://lists.osdl.org/mailman/listinfo/bridge" class="external free" href="http://lists.osdl.org/mailman/listinfo/bridge">http://lists.osdl.org/mailman/listinfo/bridge</a> to subscribe.</p>
+<p><a name="External_Links"></a></p>
+<h2>External Links</h2>
+<p></p>
+<ul>
+<li><a rel="nofollow" title="http://openvpn.sourceforge.net/bridge.html" class="external text" href="http://openvpn.sourceforge.net/bridge.html">Ethernet VPN bridging</a></li>
+<li><a rel="nofollow" title="http://ebtables.sourceforge.net" class="external text" href="http://ebtables.sourceforge.net">Ebtables firewalling</a></li>
+<li><a rel="nofollow" title="http://www.tldp.org/HOWTO/Ethernet-Bridge-netfilter-HOWTO.html" class="external text" href="http://www.tldp.org/HOWTO/Ethernet-Bridge-netfilter-HOWTO.html">Ethernet-bridge HOWTO</a></li>
+<li><a rel="nofollow" title="http://www.tldp.org/HOWTO/BRIDGE-STP-HOWTO/index.html" class="external text" href="http://www.tldp.org/HOWTO/BRIDGE-STP-HOWTO/index.html">Linux-bridge STP HOWTO</a></li>
+<li><a title="Spanning_tree_protocol" class="extiw" href="http://en.wikipedia.com/wiki/Spanning_tree_protocol"> wikipedia:Spanning_tree_protocol </a></li>
+<li><a rel="nofollow" title="http://www.cisco.com/univercd/cc/td/doc/product/rtrmgmt/sw_ntman/cwsimain/cwsi2/cwsiug2/vlan2/stpapp.htm" class="external text" href="http://www.cisco.com/univercd/cc/td/doc/product/rtrmgmt/sw_ntman/cwsimain/cwsi2/cwsiug2/vlan2/stpapp.htm">Understanding Spanning-Tree Protocol (Cisco)</a></li>
+</ul>
+  </div>
+  
+  <div class="groups">Groups: <div class="links"><ul class="links"><li class="og_5066 first last"><a href="/collaborate/workgroups/networking/group">Networking</a></li>
+</ul></div></div>
+  <ul class="links inline"><li class="print_html first"><a href="/print/5253" title="Display a printer-friendly version of this page." class="print-page" rel="nofollow">Print</a></li>
+<li class="addthis"><span><div class='addthis_toolbox addthis_default_style ' addthis:url='http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge' addthis:title='bridge' ><a class='addthis_toolbox_item addthis_button_google_plusone' g:plusone:size="medium"></a><a class='addthis_toolbox_item addthis_button_facebook_like' fb:like:layout="button_count"&gt;></a><a class='addthis_toolbox_item addthis_button_tweet' ></a></div></span></li>
+<li class="print_mail last"><a href="/printmail/5253" title="Send this page by e-mail." class="print-mail" rel="nofollow">Email</a></li>
+</ul></div>        </div>
+
+        
+        
+      </div></div> <!-- /#content-inner, /#content -->
+
+              <div id="navbar"><div id="navbar-inner" class="region region-navbar">
+
+          <a name="navigation" id="navigation"></a>
+
+          
+          
+          <div id="block-os_custom-0" class="block block-os_custom region-odd even region-count-1 count-2 "><div class="block-inner">
+
+  
+  <div class="content">
+    <div class="item-list"></div>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+<div class="breadcrumb"><a href="/">Home</a> › <a href="/og">Groups</a> › <a href="/collaborate/workgroups/networking/group">Networking</a> › bridge</div>
+        </div></div> <!-- /#navbar-inner, /#navbar -->
+      
+      
+              <div id="sidebar-right"><div id="sidebar-right-inner" class="region region-right">
+          <div id="block-og-0" class="block block-og region-odd odd region-count-1 count-1 "><div class="block-inner">
+
+      <h2 class="title"><a href="/collaborate/workgroups/networking/group">Networking</a></h2>
+  
+  <div class="content">
+    <div class="item-list"><ul><li class="first last">You must <a href="/user/login?destination=node%2F5253">login</a> in order to post into this group.</li>
+</ul></div>  </div>
+
+  
+</div></div> <!-- /block-inner, /block -->
+        </div></div> <!-- /#sidebar-right-inner, /#sidebar-right -->
+      
+    </div></div> <!-- /#main-inner, /#main -->
+
+    
+  </div></div> <!-- /#page-inner, /#page -->
+
+  
+  
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1032976986;
+    var google_conversion_label = "0_cgCMLbuAMQ2vTH7AM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <div style="display:none;">
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+    </script>
+    </div>
+    <noscript>
+    <div style="display:inline;">
+    <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1032976986/?value=0&amp;label=0_cgCMLbuAMQ2vTH7AM&amp;guid=ON&amp;script=0"/>
+    </div>
+    </noscript><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-831873-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "/sites/main/files/googleanalytics/ga.js?3";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+piAId = '7342';
+  piCId = '6861';
+
+  (function() {
+    function async_load(){
+      var s = document.createElement('script'); s.type = 'text/javascript';
+      s.src = ('https:' == document.location.protocol ? 'https://pi' :
+  'http://cdn') + '.pardot.com/pd.js';
+      var c = document.getElementsByTagName('script')[0];
+  c.parentNode.insertBefore(s, c);
+    }
+    if(window.attachEvent) { window.attachEvent('onload', async_load); }
+    else { window.addEventListener('load', async_load, false); }
+  })();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if (typeof addthis != "undefined") {addthis.init();}
+//--><!]]>
+</script>
+
+      
+    <footer>
+      <div class="diagonal">
+        <div class="container">
+          <p>Copyright &#169; 2015 Linux Foundation. All rights reserved.</p>
+          <p>The Linux Foundation, LSB, Yocto Project, Tizen and IAccessible2 are registered trademarks of The Linux Foundation.</p>
+          <p>Linux Standard Base, LSB Certified, MeeGo, and the Linux Foundation Symbol are trademarks of The Linux Foundation.</p>
+          <p>Linux is a registered <a href="//www.linuxfoundation.org/programs/legal/trademark" title="Linux Mark Institute">trademark</a> of Linus Torvalds.</p>
+          <p>Please see our <a href="//www.linuxfoundation.org/terms">terms of use</a>, <a href="//www.linuxfoundation.org/antitrust-policy">antitrust policy</a>, and <a href="//www.linuxfoundation.org/privacy">privacy policy</a>.</p>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+</html>

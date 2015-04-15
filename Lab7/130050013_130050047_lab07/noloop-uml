@@ -1,0 +1,102 @@
+STATUS OF UML-3
+
+bridge1
+ bridge id              8000.fefd00000301
+ designated root        8000.fefd00000301
+ root port                 0                    path cost                  0
+ max age                  20.00                 bridge max age            20.00
+ hello time                2.00                 bridge hello time          2.00
+ forward delay            15.00                 bridge forward delay      15.00
+ ageing time             300.00
+ hello timer               1.58                 tcn timer                  0.00
+ topology change timer    14.59                 gc timer                   0.03
+ flags                  TOPOLOGY_CHANGE TOPOLOGY_CHANGE_DETECTED 
+
+
+eth1 (0)
+ port id                0000                    state                forwarding
+ designated root        8000.fefd00000301       path cost                100
+ designated bridge      8000.fefd00000301       message age timer          0.00
+ designated port        8001                    forward delay timer        0.00
+ designated cost           0                    hold timer                 0.58
+ flags  
+
+eth2 (0)
+ port id                0000                    state                forwarding
+ designated root        8000.fefd00000301       path cost                100
+ designated bridge      8000.fefd00000301       message age timer          0.00
+ designated port        8002                    forward delay timer        0.00
+ designated cost           0                    hold timer                 0.58
+ flags 
+
+
+ STATUS OF UML-5
+
+ bridge2
+ bridge id              8000.fefd00000501
+ designated root        8000.fefd00000301
+ root port                 1                    path cost                100
+ max age                  20.00                 bridge max age            20.00
+ hello time                2.00                 bridge hello time          2.00
+ forward delay            15.00                 bridge forward delay      15.00
+ ageing time             300.00
+ hello timer               0.00                 tcn timer                  0.00
+ topology change timer     0.00                 gc timer                   0.03
+ flags  
+
+
+eth1 (0)
+ port id                0000                    state                forwarding
+ designated root        8000.fefd00000301       path cost                100
+ designated bridge      8000.fefd00000301       message age timer         18.09
+ designated port        8002                    forward delay timer        0.00
+ designated cost           0                    hold timer                 0.00
+ flags  
+
+eth2 (0)
+ port id                0000                    state                forwarding
+ designated root        8000.fefd00000301       path cost                100
+ designated bridge      8000.fefd00000501       message age timer          0.00
+ designated port        8002                    forward delay timer        0.00
+ designated cost         100                    hold timer                 0.00
+ flags  
+
+
+STATUS OF UML-7
+
+bridge3
+ bridge id              8000.fefd00000701
+ designated root        8000.fefd00000301
+ root port                 1                    path cost                100
+ max age                  20.00                 bridge max age            20.00
+ hello time                2.00                 bridge hello time          2.00
+ forward delay            15.00                 bridge forward delay      15.00
+ ageing time             300.00
+ hello timer               0.00                 tcn timer                  0.00
+ topology change timer     0.00                 gc timer                   0.00
+ flags  
+
+
+eth1 (0)
+ port id                0000                    state                forwarding
+ designated root        8000.fefd00000301       path cost                100
+ designated bridge      8000.fefd00000301       message age timer         19.11
+ designated port        8001                    forward delay timer        0.00
+ designated cost           0                    hold timer                 0.00
+ flags  
+
+eth2 (0)
+ port id                0000                    state                  blocking
+ designated root        8000.fefd00000301       path cost                100
+ designated bridge      8000.fefd00000501       message age timer         19.10
+ designated port        8002                    forward delay timer        0.00
+ designated cost         100                    hold timer                 0.00
+ flags  
+
+eth3 (0)
+ port id                0000                    state                forwarding
+ designated root        8000.fefd00000301       path cost                100
+ designated bridge      8000.fefd00000701       message age timer          0.00
+ designated port        8003                    forward delay timer        0.00
+ designated cost         100                    hold timer                 0.11
+ flags  
