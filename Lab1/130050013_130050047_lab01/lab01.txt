@@ -1,0 +1,90 @@
+
+Excercise 2
+ 
+	1.) 	Host name - OSL-82    			( got using - "cat /etc/hostname")
+	   		Ip Address - 10.105.11.82       ( got using  - "ifconfig eth0" )
+	   		
+	 2.)    Next hop router's IP address - 10.105.1.250   		( got using - "route" )
+	 		Mac address - 				   00:19:56:ed:66:c1	(got using - "arp 10.105.1.250 ")
+
+	3.) 	Host name - rsl-jeeves.cse.iitb.ac.in         (got using - "host 10.105.1.7 " )
+			IP address of local DNS server - 10.105.1.7   (got using - "cat /etc/resolv.conf" )
+			
+			
+	4.)     the numbers represent the Protocol number 
+	
+	5.)		ssh - 22
+			ftp - 21
+			nfs - 2049
+			SMTP - 25
+			
+			(got using - "cat /etc/services" )
+
+##############################################################################################################################
+
+Excercise 3
+
+	1.)		First get the IPaddress of www.iitb.ac.in using "host www.iitb.ac.in"
+		 	open wireshark and start capturing packets on eth0 interface.
+			(   
+				capture-> interfaces-> select eth0 -> Options
+				Type "host 10.102.1.111" in the "Capture Filter" option {10.102.1.111 is the ip address of www.iitb.ac.in}
+				Click Start
+				
+			)
+					
+		 	then run "wget www.iitb.ac.in" in terminal.
+	
+	2.)     a) 	Next hop is - Cisco_ed:66:c1 ( got in the Ethernet Header of TCP packet )
+				Next hop's IP address - 10.105.1.250 ( used "arp -n | grep 00:19:56:ed:66:c1" )
+				Next hop's Mac address - 00:19:56:ed:66:c1 ( got in the Ethernet Header of TCP packet )
+
+			b)  Final destination IP address - 10.102.1.111 ( got in IP header of TCP packet )
+				We cannot find the MAC address of the final destination.
+				
+			c)  fields used:
+				link (ethernet) : "type" - it has the value -IP (2048)
+				IP : "Protocol" - it has value - TCP (6)
+				TCP : "Destination Port" - it has value - http (80)
+
+####################################################################################################################################
+
+Excercise 4
+
+	1.)	
+		 	open wireshark and start capturing packets on eth0 interface.
+			(capture-> interfaces-> select eth0 -> start )			
+			then apply the filter "arp || icmp || ssh"  
+			
+	2.)     a) The protocols handling the ARP packet is: Ethernet(Link) -> ARP
+	
+			b) Value of filed in Ethernet : 2054
+			
+	3.)		a) The protocols handling the ICMP packet is: Ethernet(Link) -> IP -> ICMP
+	
+			b) The process is passed to IP protocol. Value of field in Ehternet : 2048
+			
+			c) Field used in IP to pass to ICMP : 1
+			
+	4.)		a) Source IP : 10.105.11.82
+				Destination IP : 10.105.1.11
+	
+			b) Source Port : 48794
+				Destination Port : ssh (22)
+				
+			c) The SSH Machine is 10.105.1.11
+			
+#########################################################################################################################################			
+			
+Excercise 5
+
+	1.) X can be found from the last HTTP packet recieved from the IP 10.129.1.153 under Reassembled TCP segments header.
+		Z  can be found from difference in timestamp of first and the last packet recieved. 
+		Y can be obtained by dividing X by Z.
+		
+	2.) Throughput is 89.6 Mbps.
+		Hence, we must be using 100 Mbps connection.
+		
+	3.) The time calculated by the ping is difference betweeen the timestamp of two consecutive ICMP packet requested in the trace.
+	
+					
